@@ -1,6 +1,15 @@
 <h1>Products#index</h1>
-
+<ul>
 <%= @products.each do |product| %>
-<% end %> 
+	<li>
+		<ul>
+			<li><%= product.name %></li>
+			<li><%= product.description %></li>
+			<li><%= product.formatted_price %></li>
+		</ul>
+	</li>
+<% end %>
+</ul>
 
-<p>Find me in app/views/products/index.html.erb</p>
+
+<%= link_to "New Product", new_product_path %>
