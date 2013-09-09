@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
-<%= @products.inspect %>
+
+<%= @products.inspect %><br />
+<%= User.all.inspect %>
+
 
 <%= yield %>
 
